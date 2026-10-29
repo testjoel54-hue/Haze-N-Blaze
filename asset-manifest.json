@@ -1,0 +1,170 @@
+{
+  "image_references_converted": 33,
+  "unique_images_extracted": 27,
+  "original_html_bytes": 23782932,
+  "converted_html_bytes": 22847,
+  "images": [
+    {
+      "name": "favicon.png",
+      "mime": "image/png",
+      "size": 176758,
+      "sha256": "282bb7da20c9bcdb851b3addc64182d32028f433d30664e09f67f8439b6c20af"
+    },
+    {
+      "name": "brand-logo.png",
+      "mime": "image/png",
+      "size": 1303059,
+      "sha256": "d2652a7c04e59e33cc312da2ea9ef64e0005452559667363f8da8a0195a41d92"
+    },
+    {
+      "name": "hero-background.jpg",
+      "mime": "image/jpeg",
+      "size": 462903,
+      "sha256": "78cae6eaf01457efa2efa4fdc4620f309b29cb68c8e98e4cf07f64b56814cbc1"
+    },
+    {
+      "name": "carrollton-storefront.png",
+      "mime": "image/png",
+      "size": 2593965,
+      "sha256": "9eb03ce3f063a4c1f4a4b6094c0510d65aa520437682c64462725199635f28cf"
+    },
+    {
+      "name": "dallas-storefront.png",
+      "mime": "image/png",
+      "size": 2138398,
+      "sha256": "2ed40371ed0f856b6b840765061e3fc3a5a7b31769cbe511ed65e93700dd7cd9"
+    },
+    {
+      "name": "retail-display.jpg",
+      "mime": "image/jpeg",
+      "size": 374760,
+      "sha256": "2bc167647a755a74cdcad6e069c7a609b38a9588371278350ec9251062f699de"
+    },
+    {
+      "name": "catalog-01.jpg",
+      "mime": "image/jpeg",
+      "size": 21486,
+      "sha256": "b7312fc4a679d3328ad6384fbd0cc5ba5e39f2b96a206618d9c8a5097e38da78"
+    },
+    {
+      "name": "catalog-02.jpg",
+      "mime": "image/jpeg",
+      "size": 40956,
+      "sha256": "0105921098165a20b3e1f82872d90bdef00156b020cf58e3da503c1ff7edb8a1"
+    },
+    {
+      "name": "catalog-03.jpg",
+      "mime": "image/jpeg",
+      "size": 84613,
+      "sha256": "597b242d50cd5540bbc61e94924f956097526c6b587b4c9ae57e501fb50c9cf7"
+    },
+    {
+      "name": "catalog-04.jpg",
+      "mime": "image/jpeg",
+      "size": 88874,
+      "sha256": "7e312b4640e31a6de07fcba2680c41028a5e0518a31a1b215eccbc25818c855c"
+    },
+    {
+      "name": "catalog-05.jpg",
+      "mime": "image/jpeg",
+      "size": 64537,
+      "sha256": "e560e5f183dbe0762bbd80c002e4a763d87006c9d1b62429bda00ecff3571e4d"
+    },
+    {
+      "name": "catalog-06.jpg",
+      "mime": "image/jpeg",
+      "size": 67686,
+      "sha256": "da603aae6f9f31c1ba2df72919f1f0dcddc2d3c3370bc4b107bb996f432d8017"
+    },
+    {
+      "name": "catalog-07.jpg",
+      "mime": "image/jpeg",
+      "size": 29649,
+      "sha256": "718b56b5061682899c8f8f5c7f95f1e12097d4fb834ebdcb39bb54d1d07c324e"
+    },
+    {
+      "name": "catalog-08.jpg",
+      "mime": "image/jpeg",
+      "size": 78185,
+      "sha256": "a98941fc3d2df1252dacf95be3387e80f9847824b55fe6264bd94a34774aa893"
+    },
+    {
+      "name": "catalog-09.jpg",
+      "mime": "image/jpeg",
+      "size": 115258,
+      "sha256": "8c30c1cd80695b87e8e44728297d18946e6f6d135d8fe5edc92c5cffd3ef7bb9"
+    },
+    {
+      "name": "catalog-10.jpg",
+      "mime": "image/jpeg",
+      "size": 154831,
+      "sha256": "931be0519f26618a2ae6fa51689ab1ec9a7d0d248cdad97456168da220bcdf2f"
+    },
+    {
+      "name": "catalog-11.jpg",
+      "mime": "image/jpeg",
+      "size": 71554,
+      "sha256": "c43a580f2cfd85b296b510e8690f9a18ae3a127ae1a30a73ceb374139b553186"
+    },
+    {
+      "name": "catalog-12.jpg",
+      "mime": "image/jpeg",
+      "size": 53747,
+      "sha256": "063fab813c2bf920506f18af2f85f5e67e6c775212b817877421e77f93da9bba"
+    },
+    {
+      "name": "catalog-13.jpg",
+      "mime": "image/jpeg",
+      "size": 37456,
+      "sha256": "60c04d9a96d9dd683a73def18ec15b4792a3ac70388b67c6323594c37cdb9b91"
+    },
+    {
+      "name": "catalog-14.jpg",
+      "mime": "image/jpeg",
+      "size": 213397,
+      "sha256": "0e0824ffd2d600829b9ed3b121c8d04d598cccf7c9a24e793a57ed614d7f5960"
+    },
+    {
+      "name": "catalog-15.jpg",
+      "mime": "image/jpeg",
+      "size": 126304,
+      "sha256": "a1b59c240fb11ba2f524011c48b478dcc25b605992b66db2d95501c7300b6735"
+    },
+    {
+      "name": "catalog-16.jpg",
+      "mime": "image/jpeg",
+      "size": 72251,
+      "sha256": "6f09e4d1dcfb1f5f57a1c0a87f7f10708b03f9654adee7c1603f65e10b3a43d5"
+    },
+    {
+      "name": "catalog-17.jpg",
+      "mime": "image/jpeg",
+      "size": 142011,
+      "sha256": "99f086b70d70ec5de262ebee4a95dfb8d6832f86ec84645815bcccf94d467d33"
+    },
+    {
+      "name": "catalog-18.jpg",
+      "mime": "image/jpeg",
+      "size": 17582,
+      "sha256": "23895599634585b0aad15c0a03ce892b51adfad351675205e436589d14da6f6b"
+    },
+    {
+      "name": "catalog-19.jpg",
+      "mime": "image/jpeg",
+      "size": 51001,
+      "sha256": "41a91789f75b938a4f78cec24091d9e1f6d4e6c0b1589a5ca17cc3ca906f544f"
+    },
+    {
+      "name": "catalog-20.jpg",
+      "mime": "image/jpeg",
+      "size": 64048,
+      "sha256": "bdb9714fb854e5a7c0c86d3aff9befee0fda55c289f1e1d1836b9743baee7325"
+    },
+    {
+      "name": "catalog-21.jpg",
+      "mime": "image/jpeg",
+      "size": 308406,
+      "sha256": "abb693356369d6f7d6e4af4e60efa9e23c1707f1d3c167a3b779141917b0cd3b"
+    }
+  ]
+}

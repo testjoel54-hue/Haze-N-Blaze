@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+<link rel="apple-touch-icon" href="/assets/images/favicon.png" />
+<title>Haze N Blaze — Smoke, Vape & Adult Novelty | Carrollton + Dallas</title>
+<meta name="description" content="Haze N Blaze — two local stores in Carrollton and Dallas, TX. Vapes, legal Delta, CBD, cigars, hookah, accessories and adult novelties. 21+ only." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div class="agegate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="agecard">
+    <img class="age-logo" src="/assets/images/brand-logo.png" alt="Haze N Blaze — Smoke | CBD | Tobacco | Vape">
+    <div class="agebadge">21+</div>
+    <div class="lang-toggle gate-lang" role="group" aria-label="Language / Idioma">
+      <button data-lang-btn="en" class="on" aria-pressed="true">EN</button>
+      <button data-lang-btn="es" aria-pressed="false">ES</button>
+    </div>
+    <h2 id="ageTitle" data-i18n="age_title">Adults only</h2>
+    <p data-i18n-html="age_text">Haze N Blaze sells tobacco, vape, Delta products and adult novelties. You must be <b style="color:#fff">21 or older</b> to enter this site and shop in our stores. ID is checked in store.</p>
+    <div class="agebtns">
+      <button class="btn btn-blaze btn-lg" id="ageYes" data-i18n="age_yes">I’m 21 or older — Enter</button>
+      <a class="btn btn-ghost" href="https://www.google.com" data-i18n="age_no">I’m under 21 — Exit</a>
+    </div>
+    <p class="age-note" data-i18n="age_note">By entering you agree you are of legal age in Texas to purchase tobacco and vape products.</p>
+  </div>
+</div>
+
+<div class="strip" data-i18n-html="strip">⚠ <b>21+ only</b> · Tobacco, vape &amp; adult products · ID required in store · In-store shopping only — no online checkout</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo logo-img-wrap" href="#top" aria-label="Haze N Blaze — home"><img class="logo-img" src="/assets/images/brand-logo.png" alt="Haze N Blaze — Smoke | CBD | Tobacco | Vape"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#locations" data-i18n="nav_locations">Locations</a>
+      <a href="#shop" data-i18n="nav_shop">Shop</a>
+      <a href="#hours" data-i18n="nav_hours">Hours</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="#follow" data-i18n="nav_follow">Follow</a>
+      <a class="nav-call" id="navCall" href="tel:+14692890012">Call Carrollton</a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+      <button data-lang-btn="en" class="on" aria-pressed="true">EN</button>
+      <button data-lang-btn="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <img class="hero-bg-img" src="/assets/images/hero-background.jpg" alt="" aria-hidden="true">
+  <div class="hero-shade"></div>
+  <canvas id="smoke" aria-hidden="true"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <span class="hero-tag"><span class="pulse"></span> <span data-i18n="hero_tag">Two local stores · Dallas–Fort Worth</span></span>
+    <h1 class="mega-logo"><img class="hero-logo" src="/assets/images/brand-logo.png" alt="Haze N Blaze — Smoke | CBD | Tobacco | Vape"></h1>
+    <p class="hero-sub" data-i18n-html="hero_sub"><b>Smoke · Vape · Adult Novelty.</b> One name, two neighborhoods — Carrollton and Dallas, side by side below with live hours, directions and phone for each store. Stock and deals rotate in store, so what’s on the shelf is what’s hot right now.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-blaze btn-lg" href="#shop" data-i18n="hero_cta_shop">Browse what we carry ↓</a>
+      <a class="btn btn-outline-w btn-lg" href="#locations" data-i18n="hero_cta_find">Find your store</a>
+    </div>
+
+    <div class="hero-stores" role="group" aria-label="Choose a store">
+      <button class="hero-store" data-store="carrollton">
+        <div class="hs-top"><h3>Carrollton</h3><span class="status-pill" data-status-pill="carrollton"><span class="sd"></span><span data-status-text>Checking…</span></span></div>
+        <p>1955 E Belt Line Rd · Carrollton Park Village</p>
+        <p class="count" data-count-line="carrollton">Loading live hours…</p>
+      </button>
+      <button class="hero-store" data-store="dallas">
+        <div class="hs-top"><h3>Dallas</h3><span class="status-pill" data-status-pill="dallas"><span class="sd"></span><span data-status-text>Checking…</span></span></div>
+        <p>8928 E R L Thornton Fwy Ste 109</p>
+        <p class="count" data-count-line="dallas">Loading live hours…</p>
+      </button>
+    </div>
+    <p class="mono" style="margin:16px 0 0;color:#9d9a8c;font-size:13px"><span data-i18n="live_clock_label">Dallas–Fort Worth time right now:</span> <span id="liveClock" style="color:#fff">—</span> CT</p>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+<!-- LOCATIONS -->
+<section class="block wrap" id="locations">
+  <div class="sec-head reveal">
+    <div>
+      <div class="kicker" data-i18n="loc_kicker">One brand · Two stores</div>
+      <h2 data-i18n="loc_h2">Carrollton &amp; Dallas</h2>
+      <p data-i18n="loc_p">Carrollton and Dallas, side by side — each store with its own address, hours, phone, Instagram, Facebook, directions and map. No switching needed.</p>
+    </div>
+  </div>
+
+  <div class="loc-grid">
+    <article class="loc-card reveal" data-loc-card="carrollton">
+      <div class="loc-toprow"><span class="loc-flag">💨 Carrollton</span><span class="status-pill loc-status" data-field="statusPill"><span class="sd"></span><span data-field="statusText">Checking…</span></span></div>
+      <img class="loc-photo portrait" data-field="photo" src="/assets/images/carrollton-storefront.png" alt="Haze N Blaze Carrollton storefront">
+      <div class="loc-area" data-field="area">Carrollton Park Village</div>
+      <h3 data-field="name">Haze N Blaze Smoke &amp; Adult Novelty Shop</h3>
+      <p class="loc-desc" data-field="desc"></p>
+      <div class="loc-rows">
+        <div class="loc-row"><div class="ic">📍</div><div><b data-i18n="row_address">Address</b><span data-field="addr"></span></div></div>
+        <div class="loc-row"><div class="ic">🕘</div><div><b data-i18n="row_today">Today’s hours</b><span data-field="today"></span><br><span data-field="week" style="font-size:13px"></span></div></div>
+        <div class="loc-row"><div class="ic">📞</div><div><b data-i18n="row_call">Call the store</b><a data-field="phone" href="#"></a></div></div>
+        <div class="loc-row"><div class="ic">📸</div><div><b>Instagram</b><a data-field="insta" href="#" target="_blank" rel="noopener"></a><span data-field="extra"></span></div></div>
+        <div class="loc-row"><div class="ic">👍</div><div><b>Facebook</b><a data-field="fb" href="#" target="_blank" rel="noopener"></a></div></div>
+      </div>
+      <div class="loc-actions">
+        <a class="btn btn-blaze" data-field="directions" href="#" target="_blank" rel="noopener" data-i18n="btn_directions">Get directions ↗</a>
+        <a class="btn btn-haze" data-field="callBtn" href="#" data-i18n="btn_callnow">Call now</a>
+      </div>
+      <div class="social-actions" aria-label="Social links for Carrollton">
+        <a class="btn-social" data-field="instaBtn" href="#" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">📸</span><span data-field="instaBtnText">Instagram</span></a>
+        <a class="btn-social" data-field="fbBtn" href="#" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">👍</span><span data-field="fbBtnText">Facebook</span></a>
+      </div>
+      <div class="loc-minimap"><iframe data-field="map" title="Map to Haze N Blaze Carrollton" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </article>
+    <article class="loc-card reveal" data-loc-card="dallas">
+      <div class="loc-toprow"><span class="loc-flag">🔥 Dallas</span><span class="status-pill loc-status" data-field="statusPill"><span class="sd"></span><span data-field="statusText">Checking…</span></span></div>
+      <img class="loc-photo portrait" data-field="photo" src="/assets/images/dallas-storefront.png" alt="Haze N Blaze Dallas storefront, Suite 109">
+      <div class="loc-area" data-field="area">East Dallas · E R L Thornton Fwy</div>
+      <h3 data-field="name">Haze n Blaze Smoke &amp; Vape Shop</h3>
+      <p class="loc-desc" data-field="desc"></p>
+      <div class="loc-rows">
+        <div class="loc-row"><div class="ic">📍</div><div><b data-i18n="row_address">Address</b><span data-field="addr"></span></div></div>
+        <div class="loc-row"><div class="ic">🕘</div><div><b data-i18n="row_today">Today’s hours</b><span data-field="today"></span><br><span data-field="week" style="font-size:13px"></span></div></div>
+        <div class="loc-row"><div class="ic">📞</div><div><b data-i18n="row_call">Call the store</b><a data-field="phone" href="#"></a></div></div>
+        <div class="loc-row"><div class="ic">📸</div><div><b>Instagram</b><a data-field="insta" href="#" target="_blank" rel="noopener"></a><span data-field="extra"></span></div></div>
+        <div class="loc-row"><div class="ic">👍</div><div><b>Facebook</b><a data-field="fb" href="#" target="_blank" rel="noopener"></a></div></div>
+      </div>
+      <div class="loc-actions">
+        <a class="btn btn-blaze" data-field="directions" href="#" target="_blank" rel="noopener" data-i18n="btn_directions">Get directions ↗</a>
+        <a class="btn btn-haze" data-field="callBtn" href="#" data-i18n="btn_callnow">Call now</a>
+      </div>
+      <div class="social-actions" aria-label="Social links for Dallas">
+        <a class="btn-social" data-field="instaBtn" href="#" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">📸</span><span data-field="instaBtnText">Instagram</span></a>
+        <a class="btn-social" data-field="fbBtn" href="#" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">👍</span><span data-field="fbBtnText">Facebook</span></a>
+      </div>
+      <div class="loc-minimap"><iframe data-field="map" title="Map to Haze N Blaze Dallas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </article>
+  </div>
+
+  <div class="clockbar clockbar-dual reveal">
+    <div class="clock-cell" data-clock-cell="carrollton">
+      <div>
+        <div class="big" data-field="clockTitle">💨 Carrollton —</div>
+        <p data-field="clockSub">Live status updates every second, based on Central Time.</p>
+      </div>
+      <div class="countdown" data-field="countdown" aria-live="off">--:--:--</div>
+    </div>
+    <div class="clock-cell" data-clock-cell="dallas">
+      <div>
+        <div class="big" data-field="clockTitle">🔥 Dallas —</div>
+        <p data-field="clockSub">Live status updates every second, based on Central Time.</p>
+      </div>
+      <div class="countdown" data-field="countdown" aria-live="off">--:--:--</div>
+    </div>
+  </div>
+
+  <div class="hours-grid" id="hours">
+    <div class="hours-card reveal" id="hours-carrollton"></div>
+    <div class="hours-card reveal" id="hours-dallas"></div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="block wrap" id="shop">
+  <div class="sec-head reveal">
+    <div>
+      <div class="kicker" data-i18n="shop_kicker">In-store only · No online checkout</div>
+      <h2 data-i18n="shop_h2">What we carry</h2>
+      <p data-i18n="shop_p">Search or filter by vibe. This is the range each location is known for — call ahead if you’re hunting a specific flavor or item, since stock moves fast.</p>
+    </div>
+  </div>
+
+  <div class="toolbar reveal">
+    <label class="search">🔎 <input id="searchInput" type="search" data-i18n-ph="search_ph" placeholder="Search: geek bar, hookah, grinder, CBD…" aria-label="Search categories"></label>
+  </div>
+  <div class="chips reveal" id="catChips" role="group" aria-label="Category filters"></div>
+  <p class="count-line" id="countLine"></p>
+  <div class="prod-grid" id="prodGrid"></div>
+  <div class="empty" id="emptyState">
+    <div style="font-size:34px">💨</div>
+    <h3 data-i18n="empty_h">Nothing matched that search</h3>
+    <p data-i18n="empty_p">Try a shorter word — like “vape”, “delta” or “tray” — or clear the filters. Or just call the store; the shelf is bigger than any list.</p>
+    <button class="btn btn-dark" id="clearFilters" style="margin-top:10px" data-i18n="empty_btn">Clear all filters</button>
+  </div>
+
+  <div class="both-banner reveal">
+    <div>
+      <h3 data-i18n-html="banner_h">Geek Bar &amp; Digifi disposables — <span>in Carrollton &amp; Dallas</span></h3>
+      <p data-i18n="banner_p">The drop Carrollton and Dallas promote together. Available in Carrollton and in Dallas while in stock in store — swing by or call your store to check today’s flavors before you drive over.</p>
+      <div class="both-badges" style="flex-direction:row;flex-wrap:wrap;margin-top:16px"><span>📍 Carrollton — (469) 289-0012</span><span>📍 Dallas — (469) 372-0868</span></div>
+    </div>
+    <img class="banner-img" src="/assets/images/retail-display.jpg" alt="Shelves of colorful disposable vape boxes in a retail display">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="block wrap" id="about">
+  <div class="sec-head reveal">
+    <div>
+      <div class="kicker" data-i18n="about_kicker">Local, not a franchise</div>
+      <h2 data-i18n="about_h2">Two stores. One crew.</h2>
+      <p data-i18n="about_p">Haze N Blaze is a locally-run two-store operation in the Dallas area — not a national chain. Same name, same energy, and each shop stocked for its own neighborhood.</p>
+    </div>
+  </div>
+  <div class="about-grid">
+    <div class="stat reveal"><div class="num">2</div><h3 data-i18n="stat1_h">DFW locations</h3><p data-i18n="stat1_p">Carrollton on E Belt Line Rd and Dallas on E R L Thornton Fwy.</p></div>
+    <div class="stat reveal"><div class="num">4.6★</div><h3 data-i18n="stat2_h">Carrollton on Google</h3><p data-i18n="stat2_p">Rated 4.6 stars from 14 Google reviews, listed as an inexpensive ($) stop in Carrollton Park Village.</p></div>
+    <div class="stat reveal"><div class="num" data-i18n="stat3_num">7 days</div><h3 data-i18n="stat3_h">Open every day</h3><p data-i18n="stat3_p">Each store opens seven days a week, including Sundays 10 AM – 8 PM. Live open/closed status is at the top of this page.</p></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block wrap" id="faq">
+  <div class="sec-head reveal">
+    <div>
+      <div class="kicker" data-i18n="faq_kicker">Good to know</div>
+      <h2 data-i18n="faq_h2">Questions</h2>
+    </div>
+  </div>
+  <div class="faq reveal">
+    <details><summary data-i18n="faq1_q">Do I need to be 21 to shop?</summary><p data-i18n="faq1_a">Yes. Haze N Blaze sells tobacco, vape, Delta products and adult novelties, so you must be 21 or older and show valid ID in store.</p></details>
+    <details><summary data-i18n="faq2_q">Can I order online or get delivery?</summary><p data-i18n="faq2_a">No — shopping is in-store only in Carrollton and Dallas. There’s no online checkout on this site. Call your store to ask about a product, then pick it up in person.</p></details>
+    <details><summary data-i18n="faq3_q">What’s the difference between the two stores?</summary><p data-i18n="faq3_a">Carrollton leans into American vapes, legal Delta products, cigars, cigarette &amp; cigarillos, e-juice, pods &amp; coils, grinders, scales, trays and adult novelties. Dallas is listed for CBD, Delta 8, tobacco, vape, kratom and hookah. Plenty overlaps — and promos like Geek Bar run in Carrollton and in Dallas.</p></details>
+    <details><summary data-i18n="faq4_q">Which store opens earlier?</summary><p data-i18n="faq4_a">Carrollton opens at 9:00 AM Monday–Saturday; Dallas opens at 9:30 AM. Each closes at 9:30 PM, and each opens 10 AM – 8 PM on Sundays. The live countdown at the top always uses Central Time.</p></details>
+    <details><summary data-i18n="faq5_q">How do I check if something is in stock?</summary><p data-i18n="faq5_a">Call the store: Carrollton (469) 289-0012 or Dallas (469) 372-0868. You can also watch each store’s Instagram — @hazenblaze2 for Carrollton and @hazenblazedallas for Dallas — for new drops.</p></details>
+  </div>
+</section>
+
+<!-- FOLLOW / SOCIAL -->
+<section class="block wrap" id="follow">
+  <div class="sec-head reveal">
+    <div>
+      <div class="kicker" data-i18n="follow_kicker">Stay in the loop</div>
+      <h2 data-i18n="follow_h2">Follow us</h2>
+      <p data-i18n="follow_p">New drops, restocks and deals — follow Carrollton and Dallas on Instagram and Facebook. Carrollton and Dallas are listed side by side below.</p>
+    </div>
+  </div>
+  <div class="follow-grid">
+    <article class="follow-card reveal">
+      <div class="follow-area">Carrollton Park Village</div>
+      <h3>Carrollton</h3>
+      <p data-i18n="follow_c_p">Drops and deals from the Carrollton store on E Belt Line Rd.</p>
+      <div class="follow-links">
+        <a class="follow-link" href="https://www.instagram.com/hazenblaze2" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">📸</span><span><b>Instagram</b><span>@hazenblaze2 — Carrollton</span></span><span class="arr" aria-hidden="true">↗</span></a>
+        <a class="follow-link" href="https://www.facebook.com/894862377035875" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">👍</span><span><b>Facebook</b><span>Haze n Blaze Smoke &amp; Adult Novelty Store — Carrollton</span></span><span class="arr" aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="follow-card reveal">
+      <div class="follow-area">East Dallas · E R L Thornton Fwy</div>
+      <h3>Dallas</h3>
+      <p data-i18n="follow_d_p">Drops and deals from the Dallas store on E R L Thornton Fwy.</p>
+      <div class="follow-links">
+        <a class="follow-link" href="https://www.instagram.com/hazenblazedallas/" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">📸</span><span><b>Instagram</b><span>@hazenblazedallas — Dallas</span></span><span class="arr" aria-hidden="true">↗</span></a>
+        <a class="follow-link" href="https://www.facebook.com/112834744636741/" target="_blank" rel="noopener"><span class="soc-ic" aria-hidden="true">👍</span><span><b>Facebook</b><span>Haze N Blaze - Smoke Shop (Dallas)</span></span><span class="arr" aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <img class="foot-logo" src="/assets/images/brand-logo.png" alt="Haze N Blaze — Smoke | CBD | Tobacco | Vape">
+      <h4>Haze N Blaze</h4>
+      <p data-i18n="foot_desc">Smoke · Vape · Adult Novelty. A locally-run two-store shop serving Carrollton and Dallas, Texas. Follow along for drops and deals in Carrollton and Dallas.</p>
+      <h4 style="margin-top:22px" data-i18n="foot_follow_h">Follow us</h4>
+      <ul class="foot-social">
+        <li>📸 <span data-i18n="foot_carr">Carrollton</span> — <a href="https://www.instagram.com/hazenblaze2" target="_blank" rel="noopener">Instagram @hazenblaze2</a></li>
+        <li>👍 <span data-i18n="foot_carr2">Carrollton</span> — <a href="https://www.facebook.com/894862377035875" target="_blank" rel="noopener">Facebook — Haze n Blaze Smoke &amp; Adult Novelty Store</a></li>
+        <li>📸 Dallas — <a href="https://www.instagram.com/hazenblazedallas/" target="_blank" rel="noopener">Instagram @hazenblazedallas</a></li>
+        <li>👍 Dallas — <a href="https://www.facebook.com/112834744636741/" target="_blank" rel="noopener">Facebook — Haze N Blaze - Smoke Shop (Dallas)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Carrollton</h4>
+      <ul>
+        <li>1955 E Belt Line Rd<br>Carrollton, TX 75006</li>
+        <li><a href="tel:+14692890012">(469) 289-0012</a></li>
+        <li data-i18n-html="foot_hours_c">Mon–Sat 9:00 AM – 9:30 PM<br>Sun 10:00 AM – 8:00 PM</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Haze+N+Blaze+1955+E+Belt+Line+Rd+Carrollton+TX+75006" target="_blank" rel="noopener" data-i18n="foot_directions">Directions ↗</a></li>
+        <li>📸 <a href="https://www.instagram.com/hazenblaze2" target="_blank" rel="noopener">Instagram @hazenblaze2 ↗</a></li>
+        <li>👍 <a href="https://www.facebook.com/894862377035875" target="_blank" rel="noopener">Facebook ↗</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Dallas</h4>
+      <ul>
+        <li>8928 E R L Thornton Fwy Ste 109<br>Dallas, TX 75228</li>
+        <li><a href="tel:+14693720868">(469) 372-0868</a></li>
+        <li data-i18n-html="foot_hours_d">Mon–Sat 9:30 AM – 9:30 PM<br>Sun 10:00 AM – 8:00 PM</li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Haze+n+Blaze+8928+E+R+L+Thornton+Fwy+Ste+109+Dallas+TX+75228" target="_blank" rel="noopener" data-i18n="foot_directions">Directions ↗</a></li>
+        <li>📸 <a href="https://www.instagram.com/hazenblazedallas/" target="_blank" rel="noopener">Instagram @hazenblazedallas ↗</a></li>
+        <li>👍 <a href="https://www.facebook.com/112834744636741/" target="_blank" rel="noopener">Facebook ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="warn" data-i18n="warn">21+ ONLY. WARNING: Tobacco and vape products contain nicotine. Nicotine is an addictive chemical. Delta and CBD products are intended for adults 21+; keep out of reach of children and pets. Adult novelties are sold discreetly in store. Products, brands and availability vary by location and change without notice — call your store to confirm. This site does not sell products online.</p>
+  <div class="foot-bottom" data-i18n="foot_bottom">Haze N Blaze — Carrollton &amp; Dallas, TX · Hours shown in Central Time (America/Chicago) · Live status on this page is calculated from those posted hours.</div>
+</footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
